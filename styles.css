@@ -72,3 +72,53 @@ section {
   padding: 10px;
   border-bottom: 1px solid #9DB7C9;
 }
+
+@media screen and (min-width: 750px) {
+
+  .fa {
+    float: left;
+    left: 100px;
+    width: 1.5%;
+  }
+
+  .headingArticle {
+    width: 80%;
+    right: 0px;
+    position: absolute;
+    top: 0px;
+    margin-top: 0px;
+  }
+
+  section {
+    height: 250px;
+  }
+
+  .date {
+    position: absolute;
+    left: 43px;
+  }
+
+  .time {
+    font-size: 250%;
+    position: absolute;
+    top: 18px;
+  }
+
+  .arrow {
+    position: absolute;
+    left: 164px;
+    top: 20px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: rotate(45deg);
+  }
+
+  .arrow.even {
+    border-left: 10px solid #58B0EC;
+  }
+
+  .arrow.odd {
+    border-left: 10px solid #277FC2;
+  }
+
+}/* end of @media screen tablet */

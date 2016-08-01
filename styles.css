@@ -41,7 +41,7 @@ section {
   height: 0;
   position: absolute;
   left: 20px;
-  top: 56px;
+  top: -9px;
 }
 
 .arrow.even {
@@ -56,7 +56,8 @@ section {
   color: white;
   border-radius: 10px;
   padding: 10px;
-  margin-top: 20px
+  margin-top: 20px;
+  position: relative;
 }
 
 .headingArticle.even {
@@ -73,10 +74,10 @@ section {
   border-bottom: 1px solid #9DB7C9;
 }
 
+
 @media screen and (min-width: 750px) {
 
   .fa {
-    float: left;
     left: 100px;
     width: 1.5%;
   }
@@ -90,23 +91,24 @@ section {
   }
 
   section {
-    height: 250px;
+    height: 225px;
   }
 
   .date {
     position: absolute;
-    left: 43px;
+    left: 23px;
   }
 
   .time {
-    font-size: 250%;
+    font-size: 125%;
     position: absolute;
     top: 18px;
+    left: 23px;
   }
 
   .arrow {
     position: absolute;
-    left: 164px;
+    left: -4px;
     top: 20px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
@@ -114,11 +116,57 @@ section {
   }
 
   .arrow.even {
-    border-left: 10px solid #58B0EC;
+    border-left: 5px solid #58B0EC;
   }
 
   .arrow.odd {
-    border-left: 10px solid #277FC2;
+    border-left: 5px solid #277FC2;
   }
 
-}/* end of @media screen tablet */
+  .line {
+    background-color: #9DCFF4;
+    width: 10px;
+    height: 212px;
+    position: absolute;
+    bottom: -31px;
+    left: 117px;
+  }
+
+}/* end of @media screen 750px */
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+  .headingArticle {
+    width: 70%;
+    left: 250px;
+  }
+
+  .date {
+    left: 128px;
+  }
+
+  .time {
+    font-size: 300%;
+    left: 70px;
+  }
+
+  .fa {
+    left: 193px;
+  }
+
+  .line {
+    left: 210px;
+  }
+
+  .arrow {
+    top: 15px;
+  }
+
+
+
+} /* end of @media screen 1024px */

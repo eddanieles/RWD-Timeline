@@ -15,6 +15,8 @@ section {
 }
 
 .headingArticle {
+  margin-top: 15px;
+  margin-bottom: 30px;
   color: white;
   border-radius: 10px;
   padding: 10px;
@@ -29,15 +31,19 @@ section {
 }
 
 .headline {
+  margin-top: 0;
+  padding-bottom: 10px;
   border-bottom: 1px solid lightgray;
 }
 
 .date {
   color: gray;
+  margin: 0;
 }
 
 .time {
   font-size: 150%;
+  margin: 0;
 }
 
 .time.even {
@@ -74,7 +80,8 @@ section {
 
   section {
     flex: 1 1 0;
-    margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
   }
 
   .side {
@@ -91,7 +98,7 @@ section {
     right: 18px;
     top: 41px;
     position: absolute;
-    height: 195px;
+    height: 250px;
   }
 
   article {
@@ -99,11 +106,14 @@ section {
     width: 80%;
   }
 
+  .headingArticle {
+    margin-top: 0;
+  }
+
   .arrow {
     transform: rotate(270deg);
     left: -25px;
     top: 9px;
   }
-
 
 }

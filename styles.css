@@ -76,6 +76,7 @@ section {
   body {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
 
   section {
@@ -115,5 +116,19 @@ section {
     left: -25px;
     top: 9px;
   }
+
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    width: 60%;
+  }
+
+  .time {
+    font-size: 250%;
+    position: relative;
+    left: -39px;
+  }
+
 
 }
